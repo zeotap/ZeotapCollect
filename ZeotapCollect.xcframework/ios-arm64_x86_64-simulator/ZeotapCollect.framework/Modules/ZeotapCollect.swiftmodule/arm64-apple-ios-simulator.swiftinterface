@@ -1,0 +1,234 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ZeotapCollect
+import AdSupport
+import AppTrackingTransparency
+import CommonCrypto
+import CoreTelephony
+import Foundation
+import MessageUI
+import SQLite3
+import Swift
+import SystemConfiguration
+@_exported import ZeotapCollect
+import os
+@_hasMissingDesignatedInitializers public class SPLService {
+  @objc deinit
+}
+public struct EventsList {
+  public func toString() -> Swift.String
+}
+public protocol Option {
+  var apiKey: Swift.String { get set }
+  var logging: Swift.Bool { get set }
+  var optout: Swift.Bool? { get set }
+  var useConsent: Swift.Bool { get set }
+  var checkForCMP: Swift.Bool { get set }
+  var areIdentitiesHashed: Swift.Bool { get set }
+  var hashIdentities: Swift.Bool { get set }
+  var userCountry: Swift.String { get set }
+  var batchSize: Swift.Int { get set }
+  var maxCacheSize: Swift.Int { get set }
+  var eventUploadInterval: Swift.Int { get set }
+  var roleForConsent: Swift.String? { get set }
+  var tcfPublisherConsentCategory: Swift.String? { get set }
+  var purposesForTracking: [Swift.Int] { get set }
+  var purposesForIdentifying: [Swift.Int] { get set }
+}
+public class CollectOption : ZeotapCollect.Option {
+  public var apiKey: Swift.String
+  public var logging: Swift.Bool
+  public var optout: Swift.Bool?
+  public var useConsent: Swift.Bool
+  public var checkForCMP: Swift.Bool
+  public var areIdentitiesHashed: Swift.Bool
+  public var hashIdentities: Swift.Bool
+  public var userCountry: Swift.String
+  public var batchSize: Swift.Int
+  public var maxCacheSize: Swift.Int
+  public var eventUploadInterval: Swift.Int
+  public var roleForConsent: Swift.String?
+  public var tcfPublisherConsentCategory: Swift.String?
+  public var purposesForTracking: [Swift.Int]
+  public var purposesForIdentifying: [Swift.Int]
+  public init()
+  public func writeKey(value: Swift.String) -> ZeotapCollect.CollectOption
+  public func logging(value: Swift.Bool) -> ZeotapCollect.CollectOption
+  public func optout(value: Swift.Bool) -> ZeotapCollect.CollectOption
+  public func useConsent(value: Swift.Bool) -> ZeotapCollect.CollectOption
+  public func checkForCMP(value: Swift.Bool) -> ZeotapCollect.CollectOption
+  public func areIdentitiesHashed(value: Swift.Bool) -> ZeotapCollect.CollectOption
+  public func hashIdentities(value: Swift.Bool) -> ZeotapCollect.CollectOption
+  public func userCountry(code: Swift.String) -> ZeotapCollect.CollectOption
+  public func batchSize(value: Swift.Int) -> ZeotapCollect.CollectOption
+  public func maxCacheSize(value: Swift.Int) -> ZeotapCollect.CollectOption
+  public func eventUploadInterval(value: Swift.Int) -> ZeotapCollect.CollectOption
+  public func roleForConsent(value: ZeotapCollect.RoleForConsent) -> ZeotapCollect.CollectOption
+  public func tcfPublisherConsentCategory(value: ZeotapCollect.PublisherConsentCategory) -> ZeotapCollect.CollectOption
+  public func purposesForTracking(value: [Swift.Int]) -> ZeotapCollect.CollectOption
+  public func purposesForIdentifying(value: [Swift.Int]) -> ZeotapCollect.CollectOption
+  public func build() -> ZeotapCollect.Option
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class HttpService {
+  @objc deinit
+}
+public enum RoleForConsent : Swift.String {
+  case PUBLISHER
+  case VENDOR
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PublisherConsentCategory : Swift.String {
+  case CONSENTS
+  case LEGITIMATEINTERESTS
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class SQLiteDatabase {
+  @objc deinit
+}
+public struct ConsentData {
+}
+@_hasMissingDesignatedInitializers public class ConsentService {
+  @objc deinit
+}
+public struct APIErrors {
+}
+public enum ReachabilityError : Swift.Error {
+  case FailedToCreateWithAddress(Darwin.sockaddr_in)
+  case FailedToCreateWithHostname(Swift.String)
+  case UnableToSetCallback
+  case UnableToSetDispatchQueue
+  case UnableToGetInitialFlags
+}
+@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
+public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+extension NSNotification.Name {
+  public static let reachabilityChanged: Foundation.Notification.Name
+}
+public class Reachability {
+  public typealias NetworkReachable = (ZeotapCollect.Reachability) -> Swift.Void
+  public typealias NetworkUnreachable = (ZeotapCollect.Reachability) -> Swift.Void
+  @available(*, unavailable, renamed: "Connection")
+  public enum NetworkStatus : Swift.CustomStringConvertible, Swift.Equatable {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: ZeotapCollect.Reachability.NetworkStatus, b: ZeotapCollect.Reachability.NetworkStatus) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Connection : Swift.CustomStringConvertible, Swift.Equatable {
+    case none, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: ZeotapCollect.Reachability.Connection, b: ZeotapCollect.Reachability.Connection) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: ZeotapCollect.Reachability.NetworkReachable?
+  public var whenUnreachable: ZeotapCollect.Reachability.NetworkUnreachable?
+  @available(*, deprecated, renamed: "allowsCellularConnection")
+  final public let reachableOnWWAN: Swift.Bool
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  @available(*, deprecated, renamed: "connection.description")
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  @available(*, unavailable, renamed: "connection")
+  public var currentReachabilityStatus: ZeotapCollect.Reachability.Connection {
+    get
+  }
+  public var connection: ZeotapCollect.Reachability.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
+  convenience public init?(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
+  convenience public init?(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
+  @objc deinit
+}
+extension Reachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  @available(*, deprecated, message: "Please use `connection != .none`")
+  public var isReachable: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .cellular`")
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  @available(*, deprecated, message: "Please use `connection == .wifi`")
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+public typealias Action = (Any) -> Swift.Void
+public class ActionListener {
+  public init()
+  public func addActionToListener(Type type: Swift.String, Action action: @escaping ZeotapCollect.Action)
+  public func dispatchActionListener(Type type: Swift.String, Data data: Any)
+  public func removeActionFromListener(Type type: Swift.String)
+  @objc deinit
+}
+public enum SDKException : Swift.Error {
+  case SDKNotInitialized
+  case NotValidWriteKey(_: Swift.String)
+  case URLError
+}
+extension SDKException : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public typealias LogDataCompletionHandler = ([Swift.String : Swift.AnyObject]?, Foundation.URLResponse?, ZeotapCollect.APIErrors?) -> Swift.Void
+public typealias PublishEventsCompletionHandler = (Swift.String?, Foundation.URLResponse?, ZeotapCollect.APIErrors?) -> Swift.Void
+@_hasMissingDesignatedInitializers public class Collect {
+  public static func initialize(option: ZeotapCollect.Option)
+  public static func getInstance() -> ZeotapCollect.Collect?
+  public func pauseCollection()
+  public func resumeCollection()
+  public func setEventProperties(_ eventName: Swift.String)
+  public func setEventProperties(_ eventName: Swift.String, _ eventValues: [Swift.String : Any])
+  public func setInstantEventProperties(_ eventName: Swift.String)
+  public func setInstantEventProperties(_ eventName: Swift.String, _ eventValues: [Swift.String : Any])
+  public func setUserProperties(_ userProperties: [Swift.String : Any])
+  public func setUserIdentities(_ userIdentities: [Swift.String : Any])
+  public func setPageProperties(_ pageProperties: [Swift.String : Any])
+  public func unsetUserIdentities()
+  public func getZI() -> Swift.String
+  public func resetZI()
+  public func setZI(zi: Swift.String)
+  public func setConsent(consent data: [Swift.String : Any])
+  public func listenToAskForConsent(action: @escaping ZeotapCollect.Action)
+  public func clearConsentFromStorage()
+  public func setAdvertisingIdByATTStatus(status: AppTrackingTransparency.ATTrackingManager.AuthorizationStatus)
+  public func setATTStatusAndAdvertisingId(status: AppTrackingTransparency.ATTrackingManager.AuthorizationStatus, advertisingId: Swift.String = "")
+  @objc deinit
+}
+extension ZeotapCollect.RoleForConsent : Swift.Equatable {}
+extension ZeotapCollect.RoleForConsent : Swift.Hashable {}
+extension ZeotapCollect.RoleForConsent : Swift.RawRepresentable {}
+extension ZeotapCollect.PublisherConsentCategory : Swift.Equatable {}
+extension ZeotapCollect.PublisherConsentCategory : Swift.Hashable {}
+extension ZeotapCollect.PublisherConsentCategory : Swift.RawRepresentable {}
+@available(*, unavailable, renamed: "Connection")
+extension ZeotapCollect.Reachability.NetworkStatus : Swift.Hashable {}
+extension ZeotapCollect.Reachability.Connection : Swift.Hashable {}
