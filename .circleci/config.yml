@@ -24,9 +24,9 @@ workflows:
           requires:
             - create_tag
     # This is the filter that will only run the workflow when the release branch is merged into main
-    filters:
-      branches:
-        only: main
-        branches: /^release-.*$/
+        filters:
+          branches:
+            only: main
+            branches: /^release-.*$/
 
 
