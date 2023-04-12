@@ -2,6 +2,7 @@ jobs:
   create_tag:
     macos:
       xcode: 12.5.1
+
     steps:
       - checkout
       - run: git tag -a ${CIRCLE_BRANCH#release-} -m "Release ${CIRCLE_BRANCH#release-}"
@@ -21,10 +22,9 @@ workflows:
   build_and_test:
     jobs:
       - create_tag
-      # This is the name of the job that runs the pod trunk push command
       - push_podspec:
-       requires:
-        - create_tag
+         requires:
+          - create_tag
     # This is the filter that will only run the workflow when the release branch is merged into main
     filters:
       branches:
