@@ -12,7 +12,7 @@ jobs:
   push_podspec:
     steps:
       - checkout
-      - run: pod trunk push mysdk.podspec
+      - run: pod trunk push ZeotapCollect.podspec
     when: << pipeline.parameters.branch == 'main' && pipeline.parameters.branch_previous == ('release-' + * ) >>
 
 workflows:
@@ -21,7 +21,7 @@ workflows:
     jobs:
       - create_tag
       # This is the name of the job that runs the pod trunk push command
-      - push_podspec
+      - push_podspec:
          requires:
           - create_tag
     # This is the filter that will only run the workflow when the release branch is merged into main
