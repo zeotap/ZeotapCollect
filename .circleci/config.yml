@@ -8,11 +8,6 @@ jobs:
       - checkout
       - run: git tag -a ${CIRCLE_BRANCH#release-} -m "Release ${CIRCLE_BRANCH#release-}"
       - run: git push origin ${CIRCLE_BRANCH#release-} --tags
-    filters:
-      branches:
-        only: main
-        # This will run the job only if the previous branch was a release branch
-        previous: /^release-.*$/
 
   push_podspec:
     macos:
@@ -20,11 +15,6 @@ jobs:
     steps:
       - checkout
       - run: pod trunk push ZeotapCollect.podspec
-    filters:
-      branches:
-        only: main
-        # This will run the job only if the previous branch was a release branch
-        previous: /^release-.*$/
         
 workflows:
   build_and_test:
@@ -37,6 +27,6 @@ workflows:
     filters:
       branches:
         only: main
-        branches: /^release-.*$/ 
+        branches: /^release-.*$/
 
 
