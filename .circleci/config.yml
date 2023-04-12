@@ -18,7 +18,10 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - create_tag
+      - create_tag:
+          filters:
+            branches:
+              only: main
       - push_podspec:
           requires:
             - create_tag
