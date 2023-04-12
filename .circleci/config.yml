@@ -22,7 +22,7 @@ workflows:
       - push_podspec:
           requires:
             - create_tag
-    filters:
-      branches:
-        only: main
-        branches: /^release-.*$/
+        filters:
+          branches:
+            only: main
+            branches: /^release-.*$/
