@@ -1,4 +1,3 @@
-version: 2
 jobs:
   create_tag:
     macos:
@@ -16,6 +15,7 @@ jobs:
       - checkout
       - run: pod trunk push ZeotapCollect.podspec
 workflows:
+  version: 2
   build_and_test:
     jobs:
       - create_tag
