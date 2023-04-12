@@ -7,7 +7,7 @@ jobs:
       - run: >-
           git tag -a ${CIRCLE_BRANCH#release-} -m "Release
           ${CIRCLE_BRANCH#release-}"
-      - run: 'git push origin HEAD:main --tags'
+      - run: 'git push --tags'
   push_podspec:
     macos:
       xcode: 12.5.1
