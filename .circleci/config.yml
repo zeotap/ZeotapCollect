@@ -25,4 +25,3 @@ workflows:
           filters:
             branches:
               only: main
-              branches: /^release-.*$/
