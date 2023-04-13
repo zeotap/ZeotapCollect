@@ -5,7 +5,7 @@ jobs:
     environment:
       BRANCH_NAME: $CIRCLE_BRANCH
     steps:
-      - run: ./publish.sh
+      - run: publish.sh
   push_podspec:
     macos:
       xcode: 12.5.1
