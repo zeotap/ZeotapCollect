@@ -2,12 +2,10 @@ jobs:
   create_tag:
     macos:
       xcode: 12.5.1
+    environment:
+      BRANCH_NAME: $CIRCLE_BRANCH
     steps:
-      - checkout
-      - run: >-
-          git tag -a ${CIRCLE_BRANCH#release-} -m "Release
-          ${CIRCLE_BRANCH#release-}"
-      - run: 'git push --tags'
+      - run: ./publish.sh
   push_podspec:
     macos:
       xcode: 12.5.1
