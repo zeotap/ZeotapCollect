@@ -1,28 +1,28 @@
-jobs:
-  create_tag:
-    macos:
-      xcode: 12.5.1
-    environment:
-      BRANCH_NAME: $CIRCLE_BRANCH
-    steps:
-      - run: publish.sh
-  push_podspec:
-    macos:
-      xcode: 12.5.1
-    steps:
-      - checkout
-      - run: pod trunk push ZeotapCollect.podspec
-workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - create_tag:
-          filters:
-            branches:
-              only: main
-      - push_podspec:
-          requires:
-            - create_tag
-          filters:
-            branches:
-              only: main
+#jobs:
+#  create_tag:
+#    macos:
+#      xcode: 12.5.1
+#    environment:
+#      BRANCH_NAME: $CIRCLE_BRANCH
+#    steps:
+#      - run: publish.sh
+#  push_podspec:
+#    macos:
+#      xcode: 12.5.1
+#    steps:
+#      - checkout
+#      - run: pod trunk push ZeotapCollect.podspec
+#workflows:
+#  version: 2
+#  build_and_test:
+#    jobs:
+#      - create_tag:
+#          filters:
+#            branches:
+#              only: main
+#      - push_podspec:
+#          requires:
+#            - create_tag
+#          filters:
+#            branches:
+#              only: main
