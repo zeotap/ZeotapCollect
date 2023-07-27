@@ -30,10 +30,9 @@ public protocol Option {
   var batchSize: Swift.Int { get set }
   var maxCacheSize: Swift.Int { get set }
   var eventUploadInterval: Swift.Int { get set }
-  var roleForConsent: Swift.String? { get set }
-  var tcfPublisherConsentCategory: Swift.String? { get set }
   var purposesForTracking: [Swift.Int] { get set }
   var purposesForIdentifying: [Swift.Int] { get set }
+  var checkZeotapVendorConsent: Swift.Bool { get set }
 }
 public class CollectOption : ZeotapCollect.Option {
   public var apiKey: Swift.String
@@ -47,10 +46,9 @@ public class CollectOption : ZeotapCollect.Option {
   public var batchSize: Swift.Int
   public var maxCacheSize: Swift.Int
   public var eventUploadInterval: Swift.Int
-  public var roleForConsent: Swift.String?
-  public var tcfPublisherConsentCategory: Swift.String?
   public var purposesForTracking: [Swift.Int]
   public var purposesForIdentifying: [Swift.Int]
+  public var checkZeotapVendorConsent: Swift.Bool
   public init()
   public func writeKey(value: Swift.String) -> ZeotapCollect.CollectOption
   public func logging(value: Swift.Bool) -> ZeotapCollect.CollectOption
@@ -63,33 +61,14 @@ public class CollectOption : ZeotapCollect.Option {
   public func batchSize(value: Swift.Int) -> ZeotapCollect.CollectOption
   public func maxCacheSize(value: Swift.Int) -> ZeotapCollect.CollectOption
   public func eventUploadInterval(value: Swift.Int) -> ZeotapCollect.CollectOption
-  public func roleForConsent(value: ZeotapCollect.RoleForConsent) -> ZeotapCollect.CollectOption
-  public func tcfPublisherConsentCategory(value: ZeotapCollect.PublisherConsentCategory) -> ZeotapCollect.CollectOption
   public func purposesForTracking(value: [Swift.Int]) -> ZeotapCollect.CollectOption
   public func purposesForIdentifying(value: [Swift.Int]) -> ZeotapCollect.CollectOption
+  public func checkZeotapVendorConsent(value: Swift.Bool) -> ZeotapCollect.CollectOption
   public func build() -> ZeotapCollect.Option
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class HttpService {
   @objc deinit
-}
-public enum RoleForConsent : Swift.String {
-  case PUBLISHER
-  case VENDOR
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum PublisherConsentCategory : Swift.String {
-  case CONSENTS
-  case LEGITIMATEINTERESTS
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers public class SQLiteDatabase {
   @objc deinit
@@ -223,12 +202,6 @@ public typealias PublishEventsCompletionHandler = (Swift.String?, Foundation.URL
   public func setATTStatusAndAdvertisingId(status: AppTrackingTransparency.ATTrackingManager.AuthorizationStatus, advertisingId: Swift.String = "")
   @objc deinit
 }
-extension ZeotapCollect.RoleForConsent : Swift.Equatable {}
-extension ZeotapCollect.RoleForConsent : Swift.Hashable {}
-extension ZeotapCollect.RoleForConsent : Swift.RawRepresentable {}
-extension ZeotapCollect.PublisherConsentCategory : Swift.Equatable {}
-extension ZeotapCollect.PublisherConsentCategory : Swift.Hashable {}
-extension ZeotapCollect.PublisherConsentCategory : Swift.RawRepresentable {}
 @available(*, unavailable, renamed: "Connection")
 extension ZeotapCollect.Reachability.NetworkStatus : Swift.Hashable {}
 extension ZeotapCollect.Reachability.Connection : Swift.Hashable {}
