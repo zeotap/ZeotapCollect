@@ -73,7 +73,8 @@ public class CollectOption : ZeotapCollect.Option {
 @_hasMissingDesignatedInitializers public class SQLiteDatabase {
   @objc deinit
 }
-public struct ConsentData {
+public struct ConsentData : Swift.Equatable {
+  public static func == (lhs: ZeotapCollect.ConsentData, rhs: ZeotapCollect.ConsentData) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class ConsentService {
   @objc deinit
