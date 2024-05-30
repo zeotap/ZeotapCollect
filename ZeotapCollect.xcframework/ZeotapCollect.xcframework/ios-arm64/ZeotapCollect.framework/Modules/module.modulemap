@@ -1,0 +1,11 @@
+framework module ZeotapCollect {
+  umbrella header "ZeotapCollect.h"
+
+  export *
+  module * { export * }
+}
+
+module ZeotapCollect.Swift {
+    header "ZeotapCollect-Swift.h"
+    requires objc
+}
