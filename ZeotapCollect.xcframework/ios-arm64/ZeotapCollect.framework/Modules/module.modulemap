@@ -6,6 +6,6 @@ framework module ZeotapCollect {
 }
 
 module ZeotapCollect.Swift {
-    header "ZeotapCollect-Swift.h"
-    requires objc
+  header "ZeotapCollect-Swift.h"
+  requires objc
 }
