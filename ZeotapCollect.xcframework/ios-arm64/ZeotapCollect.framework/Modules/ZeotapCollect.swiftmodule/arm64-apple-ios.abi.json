@@ -6388,7 +6388,7 @@
       "kind": "StringLiteral",
       "offset": 211,
       "length": 7,
-      "value": "\"1.3.4\""
+      "value": "\"1.3.5\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
@@ -7807,14 +7807,14 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Internal\/SPLEventsManager.swift",
       "kind": "Dictionary",
-      "offset": 4520,
+      "offset": 4699,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Internal\/SPLEventsManager.swift",
       "kind": "Dictionary",
-      "offset": 5460,
+      "offset": 5639,
       "length": 3,
       "value": "[]"
     },
@@ -7835,7 +7835,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
       "kind": "StringLiteral",
-      "offset": 10341,
+      "offset": 10058,
       "length": 2,
       "value": "\"\""
     }
