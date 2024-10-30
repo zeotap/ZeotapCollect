@@ -18,6 +18,10 @@ import os
 @_hasMissingDesignatedInitializers public class SPLService {
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class Utility {
+  public static func defaultResponseCallback(_ statusMessage: [Swift.String : Swift.String])
+  @objc deinit
+}
 public struct EventsList {
   public func toString() -> Swift.String
 }
@@ -70,6 +74,7 @@ public class CollectOption : ZeotapCollect.Option {
   public func build() -> ZeotapCollect.Option
   @objc deinit
 }
+public typealias ResponseCallback = ([Swift.String : Swift.String]) -> Swift.Void
 @_hasMissingDesignatedInitializers public class HttpService {
   @objc deinit
 }
@@ -188,13 +193,13 @@ public typealias PublishEventsCompletionHandler = (Swift.String?, Foundation.URL
   public static func getInstance() -> ZeotapCollect.Collect?
   public func pauseCollection()
   public func resumeCollection()
-  public func setEventProperties(_ eventName: Swift.String)
-  public func setEventProperties(_ eventName: Swift.String, _ eventValues: [Swift.String : Any])
-  public func setInstantEventProperties(_ eventName: Swift.String)
-  public func setInstantEventProperties(_ eventName: Swift.String, _ eventValues: [Swift.String : Any])
-  public func setUserProperties(_ userProperties: [Swift.String : Any])
-  public func setUserIdentities(_ userIdentities: [Swift.String : Any])
-  public func setPageProperties(_ pageProperties: [Swift.String : Any])
+  public func setEventProperties(_ eventName: Swift.String, _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
+  public func setEventProperties(_ eventName: Swift.String, _ eventValues: [Swift.String : Any], _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
+  public func setInstantEventProperties(_ eventName: Swift.String, _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
+  public func setInstantEventProperties(_ eventName: Swift.String, _ eventValues: [Swift.String : Any], _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
+  public func setUserProperties(_ userProperties: [Swift.String : Any], _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
+  public func setUserIdentities(_ userIdentities: [Swift.String : Any], _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
+  public func setPageProperties(_ pageProperties: [Swift.String : Any], _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
   public func unsetUserIdentities()
   public func getZI() -> Swift.String
   public func resetZI()

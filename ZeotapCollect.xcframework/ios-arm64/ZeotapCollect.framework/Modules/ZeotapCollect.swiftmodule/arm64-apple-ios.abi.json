@@ -83,6 +83,63 @@
         "moduleName": "ZeotapCollect"
       },
       {
+        "kind": "TypeDecl",
+        "name": "Utility",
+        "printedName": "Utility",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "defaultResponseCallback",
+            "printedName": "defaultResponseCallback(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13ZeotapCollect7UtilityC23defaultResponseCallbackyySDyS2SGFZ",
+            "mangledName": "$s13ZeotapCollect7UtilityC23defaultResponseCallbackyySDyS2SGFZ",
+            "moduleName": "ZeotapCollect",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13ZeotapCollect7UtilityC",
+        "mangledName": "$s13ZeotapCollect7UtilityC",
+        "moduleName": "ZeotapCollect",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -5552,7 +5609,7 @@
           {
             "kind": "Function",
             "name": "setEventProperties",
-            "printedName": "setEventProperties(_:)",
+            "printedName": "setEventProperties(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5564,11 +5621,44 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C18setEventPropertiesyySSF",
-            "mangledName": "$s13ZeotapCollect0B0C18setEventPropertiesyySSF",
+            "usr": "s:13ZeotapCollect0B0C18setEventPropertiesyySS_ySDyS2SGctF",
+            "mangledName": "$s13ZeotapCollect0B0C18setEventPropertiesyySS_ySDyS2SGctF",
             "moduleName": "ZeotapCollect",
             "declAttributes": [
               "AccessControl"
@@ -5578,7 +5668,7 @@
           {
             "kind": "Function",
             "name": "setEventProperties",
-            "printedName": "setEventProperties(_:_:)",
+            "printedName": "setEventProperties(_:_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5609,37 +5699,44 @@
                   }
                 ],
                 "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C18setEventPropertiesyySS_SDySSypGtF",
-            "mangledName": "$s13ZeotapCollect0B0C18setEventPropertiesyySS_SDySSypGtF",
-            "moduleName": "ZeotapCollect",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setInstantEventProperties",
-            "printedName": "setInstantEventProperties(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
               },
               {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C25setInstantEventPropertiesyySSF",
-            "mangledName": "$s13ZeotapCollect0B0C25setInstantEventPropertiesyySSF",
+            "usr": "s:13ZeotapCollect0B0C18setEventPropertiesyySS_SDySSypGySDyS2SGctF",
+            "mangledName": "$s13ZeotapCollect0B0C18setEventPropertiesyySS_SDySSypGySDyS2SGctF",
             "moduleName": "ZeotapCollect",
             "declAttributes": [
               "AccessControl"
@@ -5663,6 +5760,65 @@
                 "usr": "s:SS"
               },
               {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13ZeotapCollect0B0C25setInstantEventPropertiesyySS_ySDyS2SGctF",
+            "mangledName": "$s13ZeotapCollect0B0C25setInstantEventPropertiesyySS_ySDyS2SGctF",
+            "moduleName": "ZeotapCollect",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInstantEventProperties",
+            "printedName": "setInstantEventProperties(_:_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
                 "printedName": "[Swift.String : Any]",
@@ -5680,11 +5836,44 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C25setInstantEventPropertiesyySS_SDySSypGtF",
-            "mangledName": "$s13ZeotapCollect0B0C25setInstantEventPropertiesyySS_SDySSypGtF",
+            "usr": "s:13ZeotapCollect0B0C25setInstantEventPropertiesyySS_SDySSypGySDyS2SGctF",
+            "mangledName": "$s13ZeotapCollect0B0C25setInstantEventPropertiesyySS_SDySSypGySDyS2SGctF",
             "moduleName": "ZeotapCollect",
             "declAttributes": [
               "AccessControl"
@@ -5694,7 +5883,7 @@
           {
             "kind": "Function",
             "name": "setUserProperties",
-            "printedName": "setUserProperties(_:)",
+            "printedName": "setUserProperties(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5719,11 +5908,44 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C17setUserPropertiesyySDySSypGF",
-            "mangledName": "$s13ZeotapCollect0B0C17setUserPropertiesyySDySSypGF",
+            "usr": "s:13ZeotapCollect0B0C17setUserPropertiesyySDySSypG_ySDyS2SGctF",
+            "mangledName": "$s13ZeotapCollect0B0C17setUserPropertiesyySDySSypG_ySDyS2SGctF",
             "moduleName": "ZeotapCollect",
             "declAttributes": [
               "AccessControl"
@@ -5733,7 +5955,7 @@
           {
             "kind": "Function",
             "name": "setUserIdentities",
-            "printedName": "setUserIdentities(_:)",
+            "printedName": "setUserIdentities(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5758,11 +5980,44 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C17setUserIdentitiesyySDySSypGF",
-            "mangledName": "$s13ZeotapCollect0B0C17setUserIdentitiesyySDySSypGF",
+            "usr": "s:13ZeotapCollect0B0C17setUserIdentitiesyySDySSypG_ySDyS2SGctF",
+            "mangledName": "$s13ZeotapCollect0B0C17setUserIdentitiesyySDySSypG_ySDyS2SGctF",
             "moduleName": "ZeotapCollect",
             "declAttributes": [
               "AccessControl"
@@ -5772,7 +6027,7 @@
           {
             "kind": "Function",
             "name": "setPageProperties",
-            "printedName": "setPageProperties(_:)",
+            "printedName": "setPageProperties(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5797,11 +6052,44 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C17setPagePropertiesyySDySSypGF",
-            "mangledName": "$s13ZeotapCollect0B0C17setPagePropertiesyySDySSypGF",
+            "usr": "s:13ZeotapCollect0B0C17setPagePropertiesyySDySSypG_ySDyS2SGctF",
+            "mangledName": "$s13ZeotapCollect0B0C17setPagePropertiesyySDySSypG_ySDyS2SGctF",
             "moduleName": "ZeotapCollect",
             "declAttributes": [
               "AccessControl"
@@ -6388,7 +6676,7 @@
       "kind": "StringLiteral",
       "offset": 211,
       "length": 7,
-      "value": "\"1.3.5\""
+      "value": "\"1.3.6\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
@@ -7338,14 +7626,147 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6149,
+      "offset": 5522,
+      "length": 27,
+      "value": "\"Event logged successfully\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5569,
+      "length": 34,
+      "value": "\"Page properties set successfully\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5627,
+      "length": 34,
+      "value": "\"User identities set successfully\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5702,
+      "length": 34,
+      "value": "\"Failed to update user identities\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5761,
+      "length": 34,
+      "value": "\"User properties set successfully\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5833,
+      "length": 42,
+      "value": "\"User Ids not set as consent not provided\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5914,
+      "length": 49,
+      "value": "\"User properties not set as consent not provided\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5997,
+      "length": 49,
+      "value": "\"Page properties not set as consent not provided\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6081,
+      "length": 42,
+      "value": "\"Event not logged as consent not provided\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6145,
+      "length": 22,
+      "value": "\"User Ids already set\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6195,
+      "length": 21,
+      "value": "\"SDK not initialized\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6241,
+      "length": 28,
+      "value": "\"Event properties are empty\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6294,
+      "length": 21,
+      "value": "\"Event name is empty\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6339,
+      "length": 27,
+      "value": "\"Page properties are empty\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6390,
+      "length": 27,
+      "value": "\"User properties are empty\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6440,
+      "length": 27,
+      "value": "\"User Identities are empty\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6483,
+      "length": 9,
+      "value": "\"SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6506,
+      "length": 7,
+      "value": "\"ERROR\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6529,
+      "length": 9,
+      "value": "\"WARNING\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7270,
       "length": 108,
       "value": "\"CREATE TABLE IF NOT EXISTS event(eventUUID TEXT PRIMARY KEY,events TEXT,page TEXT,user TEXT,version TEXT);\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6285,
+      "offset": 7406,
       "length": 17,
       "value": "\"CollectLogs.txt\""
     },
@@ -7807,35 +8228,56 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Internal\/SPLEventsManager.swift",
       "kind": "Dictionary",
-      "offset": 4699,
+      "offset": 5356,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Internal\/SPLEventsManager.swift",
       "kind": "Dictionary",
-      "offset": 5639,
+      "offset": 6552,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 22,
+      "value": "\"Instance initialized\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
       "kind": "BooleanLiteral",
-      "offset": 545,
+      "offset": 608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
       "kind": "BooleanLiteral",
-      "offset": 578,
+      "offset": 641,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1136,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
       "kind": "StringLiteral",
-      "offset": 10058,
+      "offset": 1186,
+      "length": 21,
+      "value": "\"com.collect.Collect\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
+      "kind": "StringLiteral",
+      "offset": 13751,
       "length": 2,
       "value": "\"\""
     }
