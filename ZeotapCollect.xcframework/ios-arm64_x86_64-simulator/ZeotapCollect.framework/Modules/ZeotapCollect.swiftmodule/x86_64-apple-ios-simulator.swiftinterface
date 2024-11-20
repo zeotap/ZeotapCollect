@@ -189,7 +189,7 @@ extension ZeotapCollect.SDKException : Foundation.LocalizedError {
 public typealias LogDataCompletionHandler = ([Swift.String : Swift.AnyObject]?, Foundation.URLResponse?, ZeotapCollect.APIErrors?) -> Swift.Void
 public typealias PublishEventsCompletionHandler = (Swift.String?, Foundation.URLResponse?, ZeotapCollect.APIErrors?) -> Swift.Void
 @_hasMissingDesignatedInitializers public class Collect {
-  public static func initialize(option: ZeotapCollect.Option)
+  public static func initialize(option: ZeotapCollect.Option, _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
   public static func getInstance() -> ZeotapCollect.Collect?
   public func pauseCollection()
   public func resumeCollection()
