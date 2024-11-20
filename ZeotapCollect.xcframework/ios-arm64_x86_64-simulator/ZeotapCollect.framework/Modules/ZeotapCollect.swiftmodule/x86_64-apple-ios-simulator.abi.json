@@ -5510,7 +5510,7 @@
           {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(option:)",
+            "printedName": "initialize(option:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5522,11 +5522,44 @@
                 "name": "Option",
                 "printedName": "ZeotapCollect.Option",
                 "usr": "s:13ZeotapCollect6OptionP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C10initialize6optionyAA6Option_p_tFZ",
-            "mangledName": "$s13ZeotapCollect0B0C10initialize6optionyAA6Option_p_tFZ",
+            "usr": "s:13ZeotapCollect0B0C10initialize6option_yAA6Option_p_ySDyS2SGctFZ",
+            "mangledName": "$s13ZeotapCollect0B0C10initialize6option_yAA6Option_p_ySDyS2SGctFZ",
             "moduleName": "ZeotapCollect",
             "static": true,
             "declAttributes": [
@@ -6676,7 +6709,7 @@
       "kind": "StringLiteral",
       "offset": 211,
       "length": 7,
-      "value": "\"1.3.6\""
+      "value": "\"1.3.7\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
@@ -7738,35 +7771,56 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6483,
+      "offset": 6491,
+      "length": 30,
+      "value": "\"SDK initialized successfully\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6553,
+      "length": 25,
+      "value": "\"SDK already initialized\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6606,
+      "length": 35,
+      "value": "\"SDK initialization is in progress\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6657,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6506,
+      "offset": 6680,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6529,
+      "offset": 6703,
       "length": 9,
       "value": "\"WARNING\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7270,
+      "offset": 7444,
       "length": 108,
       "value": "\"CREATE TABLE IF NOT EXISTS event(eventUUID TEXT PRIMARY KEY,events TEXT,page TEXT,user TEXT,version TEXT);\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7406,
+      "offset": 7580,
       "length": 17,
       "value": "\"CollectLogs.txt\""
     },
@@ -7797,6 +7851,20 @@
       "offset": 243,
       "length": 3,
       "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/GDPRConsent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 308,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/GDPRConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 394,
+      "length": 25,
+      "value": "\"com.collect.GDPRConsent\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/GDPRConsent.swift",
@@ -8277,7 +8345,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
       "kind": "StringLiteral",
-      "offset": 13751,
+      "offset": 14557,
       "length": 2,
       "value": "\"\""
     }
