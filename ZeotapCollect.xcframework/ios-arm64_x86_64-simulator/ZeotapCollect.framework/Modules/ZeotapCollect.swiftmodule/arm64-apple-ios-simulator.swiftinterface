@@ -204,7 +204,7 @@ public typealias PublishEventsCompletionHandler = (Swift.String?, Foundation.URL
   public func getZI() -> Swift.String
   public func resetZI()
   public func setZI(zi: Swift.String)
-  public func setConsent(consent data: [Swift.String : Any])
+  public func setConsent(consent data: [Swift.String : Any], _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
   public func listenToAskForConsent(action: @escaping ZeotapCollect.Action)
   public func clearConsentFromStorage()
   public func setAdvertisingIdByATTStatus(status: AppTrackingTransparency.ATTrackingManager.AuthorizationStatus)

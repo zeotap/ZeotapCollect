@@ -22,6 +22,6 @@ let package = Package(
               .binaryTarget(
                   name: "ZeotapCollect",
                   url: "https://content.zeotap.com/ios-sdk/ios-collect-sdk.zip",
-                  checksum: "e654f21d60d6d10908654047fe3e56a035dc5440f4c82934cdb8107ce697c20d")
+                  checksum: "db3a6741a35828332f51798625ce1447a7c43d39307258fe6c271ff9668d4224")
           ]
 )
