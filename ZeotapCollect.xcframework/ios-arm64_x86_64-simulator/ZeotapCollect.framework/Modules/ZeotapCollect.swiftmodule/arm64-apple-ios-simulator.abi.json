@@ -6219,7 +6219,7 @@
           {
             "kind": "Function",
             "name": "setConsent",
-            "printedName": "setConsent(consent:)",
+            "printedName": "setConsent(consent:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6244,11 +6244,44 @@
                   }
                 ],
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Swift.String]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true
               }
             ],
             "declKind": "Func",
-            "usr": "s:13ZeotapCollect0B0C10setConsent7consentySDySSypG_tF",
-            "mangledName": "$s13ZeotapCollect0B0C10setConsent7consentySDySSypG_tF",
+            "usr": "s:13ZeotapCollect0B0C10setConsent7consent_ySDySSypG_ySDyS2SGctF",
+            "mangledName": "$s13ZeotapCollect0B0C10setConsent7consent_ySDySSypG_ySDyS2SGctF",
             "moduleName": "ZeotapCollect",
             "declAttributes": [
               "AccessControl"
@@ -6709,7 +6742,7 @@
       "kind": "StringLiteral",
       "offset": 211,
       "length": 7,
-      "value": "\"1.3.7\""
+      "value": "\"1.3.8\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
@@ -6847,980 +6880,1029 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 895,
+      "length": 5,
+      "value": "\"z_p\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 923,
       "length": 17,
       "value": "\"event_eventName\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "Array",
+      "offset": 969,
+      "length": 35,
+      "value": "[\"track\", \"identify\", \"cookieSync\"]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 949,
+      "offset": 1049,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 971,
+      "offset": 1071,
       "length": 9,
       "value": "\"loginid\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 1094,
       "length": 8,
       "value": "\"cellno\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1019,
+      "offset": 1119,
       "length": 11,
       "value": "\"cellno_cc\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1049,
+      "offset": 1149,
       "length": 13,
       "value": "\"cellno_e164\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1080,
+      "offset": 1180,
       "length": 12,
       "value": "\"cellno_raw\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1124,
+      "offset": 1224,
       "length": 26,
       "value": "\"cellno_with_country_code\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1185,
+      "offset": 1285,
       "length": 29,
       "value": "\"cellno_without_country_code\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1282,
+      "offset": 1382,
       "length": 4,
       "value": "\"zi\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1304,
+      "offset": 1404,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1331,
+      "offset": 1431,
       "length": 9,
       "value": "\"loginid\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1359,
+      "offset": 1459,
       "length": 29,
       "value": "\"cellno_without_country_code\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1410,
+      "offset": 1510,
       "length": 26,
       "value": "\"cellno_with_country_code\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1560,
       "length": 13,
       "value": "\"cellno_e164\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1496,
+      "offset": 1596,
       "length": 12,
       "value": "\"cellno_raw\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1528,
+      "offset": 1628,
       "length": 9,
       "value": "\"country\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 1654,
       "length": 16,
       "value": "\"advertising_id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1594,
+      "offset": 1694,
       "length": 26,
       "value": "\"att_authorization_status\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1697,
+      "offset": 1797,
       "length": 9,
       "value": "\"user_zi\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1734,
+      "offset": 1834,
       "length": 12,
       "value": "\"user_email\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1776,
+      "offset": 1876,
       "length": 14,
       "value": "\"user_loginid\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1819,
+      "offset": 1919,
       "length": 34,
       "value": "\"user_cellno_without_country_code\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1885,
+      "offset": 1985,
       "length": 31,
       "value": "\"user_cellno_with_country_code\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1950,
+      "offset": 2050,
       "length": 18,
       "value": "\"user_cellno_e164\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1995,
+      "offset": 2095,
       "length": 21,
       "value": "\"user_advertising_id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2055,
+      "offset": 2155,
       "length": 31,
       "value": "\"user_att_authorization_status\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2114,
+      "offset": 2214,
       "length": 6,
       "value": "\"sha1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2142,
+      "offset": 2242,
       "length": 16,
       "value": "\"sha1_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2280,
       "length": 16,
       "value": "\"sha1_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2210,
+      "offset": 2310,
       "length": 8,
       "value": "\"sha256\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2242,
+      "offset": 2342,
       "length": 18,
       "value": "\"sha256_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2284,
+      "offset": 2384,
       "length": 18,
       "value": "\"sha256_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2313,
+      "offset": 2413,
       "length": 5,
       "value": "\"md5\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2339,
+      "offset": 2439,
       "length": 15,
       "value": "\"md5_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2375,
+      "offset": 2475,
       "length": 15,
       "value": "\"md5_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "Array",
-      "offset": 2428,
+      "offset": 2528,
       "length": 43,
       "value": "[\"email\", \"cellno\", \"cellno_cc\", \"loginid\"]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "Array",
-      "offset": 2493,
+      "offset": 2593,
       "length": 58,
       "value": "[\"email\", \"cellno\", \"cellno_cc\", \"loginid\", \"cellno_e164\"]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "Array",
-      "offset": 2583,
+      "offset": 2683,
       "length": 20,
       "value": "[\"email\", \"loginid\"]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "Array",
-      "offset": 2635,
+      "offset": 2735,
       "length": 38,
       "value": "[\"cellno\", \"cellno_cc\", \"cellno_e164\"]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2711,
+      "offset": 2811,
       "length": 24,
       "value": "\"email_sha256_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2738,
+      "offset": 2838,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2751,
+      "offset": 2851,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2782,
+      "offset": 2882,
       "length": 24,
       "value": "\"email_sha256_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2809,
+      "offset": 2909,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2822,
+      "offset": 2922,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2853,
+      "offset": 2953,
       "length": 21,
       "value": "\"email_md5_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2877,
+      "offset": 2977,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2890,
+      "offset": 2990,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2918,
+      "offset": 3018,
       "length": 21,
       "value": "\"email_md5_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2942,
+      "offset": 3042,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2955,
+      "offset": 3055,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2983,
+      "offset": 3083,
       "length": 22,
       "value": "\"email_sha1_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3008,
+      "offset": 3108,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3021,
+      "offset": 3121,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3050,
+      "offset": 3150,
       "length": 22,
       "value": "\"email_sha1_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3075,
+      "offset": 3175,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3088,
+      "offset": 3188,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3117,
+      "offset": 3217,
       "length": 26,
       "value": "\"loginid_sha256_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3146,
+      "offset": 3246,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3161,
+      "offset": 3261,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3192,
+      "offset": 3292,
       "length": 26,
       "value": "\"loginid_sha256_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3221,
+      "offset": 3321,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3236,
+      "offset": 3336,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3267,
+      "offset": 3367,
       "length": 23,
       "value": "\"loginid_md5_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3293,
+      "offset": 3393,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3308,
+      "offset": 3408,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3336,
+      "offset": 3436,
       "length": 23,
       "value": "\"loginid_md5_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3362,
+      "offset": 3462,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3377,
+      "offset": 3477,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3405,
+      "offset": 3505,
       "length": 24,
       "value": "\"loginid_sha1_lowercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3432,
+      "offset": 3532,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3447,
+      "offset": 3547,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3476,
+      "offset": 3576,
       "length": 24,
       "value": "\"loginid_sha1_uppercase\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3503,
+      "offset": 3603,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3518,
+      "offset": 3618,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3547,
+      "offset": 3647,
       "length": 36,
       "value": "\"cellno_without_country_code_sha256\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3586,
+      "offset": 3686,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3621,
+      "offset": 3721,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3642,
+      "offset": 3742,
       "length": 33,
       "value": "\"cellno_without_country_code_md5\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3678,
+      "offset": 3778,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3713,
+      "offset": 3813,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3731,
+      "offset": 3831,
       "length": 34,
       "value": "\"cellno_without_country_code_sha1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3768,
+      "offset": 3868,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3803,
+      "offset": 3903,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3822,
+      "offset": 3922,
       "length": 33,
       "value": "\"cellno_with_country_code_sha256\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3858,
+      "offset": 3958,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3890,
+      "offset": 3990,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3911,
+      "offset": 4011,
       "length": 30,
       "value": "\"cellno_with_country_code_md5\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3944,
+      "offset": 4044,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3976,
+      "offset": 4076,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3994,
+      "offset": 4094,
       "length": 31,
       "value": "\"cellno_with_country_code_sha1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4028,
+      "offset": 4128,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4060,
+      "offset": 4160,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4079,
+      "offset": 4179,
       "length": 20,
       "value": "\"cellno_e164_sha256\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4102,
+      "offset": 4202,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4121,
+      "offset": 4221,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4142,
+      "offset": 4242,
       "length": 17,
       "value": "\"cellno_e164_md5\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4162,
+      "offset": 4262,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4181,
+      "offset": 4281,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4199,
+      "offset": 4299,
       "length": 18,
       "value": "\"cellno_e164_sha1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4220,
+      "offset": 4320,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4239,
+      "offset": 4339,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5009,
+      "offset": 5109,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5039,
+      "offset": 5139,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5069,
+      "offset": 5169,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5096,
+      "offset": 5196,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5125,
+      "offset": 5225,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5158,
+      "offset": 5258,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5215,
+      "offset": 5315,
       "length": 10,
       "value": "\"pageView\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5250,
+      "offset": 5350,
       "length": 21,
       "value": "\"set_user_properties\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5296,
+      "offset": 5396,
       "length": 19,
       "value": "\"setUserIdentities\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5335,
+      "offset": 5435,
       "length": 12,
       "value": "\"setConsent\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5370,
+      "offset": 5470,
       "length": 15,
       "value": "\"updateConsent\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5414,
+      "offset": 5514,
       "length": 22,
       "value": "\"updateUserIdentities\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5465,
+      "offset": 5565,
       "length": 17,
       "value": "\"zeotapDB.sqlite\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5522,
+      "offset": 5622,
       "length": 27,
       "value": "\"Event logged successfully\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5569,
+      "offset": 5669,
       "length": 34,
       "value": "\"Page properties set successfully\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5627,
+      "offset": 5727,
       "length": 34,
       "value": "\"User identities set successfully\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5702,
+      "offset": 5802,
       "length": 34,
       "value": "\"Failed to update user identities\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5761,
+      "offset": 5861,
       "length": 34,
       "value": "\"User properties set successfully\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5833,
+      "offset": 5933,
       "length": 42,
       "value": "\"User Ids not set as consent not provided\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5914,
+      "offset": 6014,
       "length": 49,
       "value": "\"User properties not set as consent not provided\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5997,
+      "offset": 6097,
       "length": 49,
       "value": "\"Page properties not set as consent not provided\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6081,
+      "offset": 6181,
       "length": 42,
       "value": "\"Event not logged as consent not provided\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6145,
+      "offset": 6245,
       "length": 22,
       "value": "\"User Ids already set\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6195,
+      "offset": 6295,
       "length": 21,
       "value": "\"SDK not initialized\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6241,
+      "offset": 6341,
       "length": 28,
       "value": "\"Event properties are empty\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6294,
+      "offset": 6394,
       "length": 21,
       "value": "\"Event name is empty\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6339,
+      "offset": 6439,
       "length": 27,
       "value": "\"Page properties are empty\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6390,
+      "offset": 6490,
       "length": 27,
       "value": "\"User properties are empty\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6440,
+      "offset": 6540,
       "length": 27,
       "value": "\"User Identities are empty\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6491,
+      "offset": 6591,
       "length": 30,
       "value": "\"SDK initialized successfully\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6553,
+      "offset": 6653,
       "length": 25,
       "value": "\"SDK already initialized\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6606,
+      "offset": 6706,
       "length": 35,
       "value": "\"SDK initialization is in progress\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6657,
+      "offset": 6768,
+      "length": 30,
+      "value": "\"Consent properties are empty\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6826,
+      "length": 32,
+      "value": "\"Consent properties not changed\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6895,
+      "length": 41,
+      "value": "\"Consent properties not changed or empty\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6960,
+      "length": 30,
+      "value": "\"Consent updated successfully\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7020,
+      "length": 36,
+      "value": "\"Brand consent updated successfully\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7072,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6680,
+      "offset": 7095,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6703,
+      "offset": 7118,
       "length": 9,
       "value": "\"WARNING\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7444,
+      "offset": 7859,
       "length": 108,
       "value": "\"CREATE TABLE IF NOT EXISTS event(eventUUID TEXT PRIMARY KEY,events TEXT,page TEXT,user TEXT,version TEXT);\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7580,
+      "offset": 7995,
       "length": 17,
       "value": "\"CollectLogs.txt\""
     },
@@ -7952,183 +8034,190 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 621,
+      "length": 20,
+      "value": "\"brand_consent_data\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 654,
+      "offset": 709,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 703,
+      "offset": 758,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 767,
+      "offset": 822,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 823,
+      "offset": 878,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 891,
+      "offset": 946,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 951,
+      "offset": 1006,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1035,
+      "offset": 1090,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1666,
+      "offset": 1721,
       "length": 3,
       "value": "301"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1719,
+      "offset": 1774,
       "length": 22,
       "value": "\"IABTCF_CmpSdkVersion\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1769,
+      "offset": 1824,
       "length": 22,
       "value": "\"IABTCF_CmpSdkVersion\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1822,
+      "offset": 1877,
       "length": 22,
       "value": "\"IABTCF_PolicyVersion\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1873,
+      "offset": 1928,
       "length": 20,
       "value": "\"IABTCF_gdprApplies\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1922,
+      "offset": 1977,
       "length": 20,
       "value": "\"IABTCF_PublisherCC\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1980,
+      "offset": 2035,
       "length": 28,
       "value": "\"IABTCF_PurposeOneTreatment\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 2103,
       "length": 29,
       "value": "\"IABTCF_UseNonStandardStacks\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2103,
+      "offset": 2158,
       "length": 17,
       "value": "\"IABTCF_TCString\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2152,
+      "offset": 2207,
       "length": 23,
       "value": "\"IABTCF_VendorConsents\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2219,
+      "offset": 2274,
       "length": 34,
       "value": "\"IABTCF_VendorLegitimateInterests\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2286,
+      "offset": 2341,
       "length": 24,
       "value": "\"IABTCF_PurposeConsents\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2355,
+      "offset": 2410,
       "length": 35,
       "value": "\"IABTCF_PurposeLegitimateInterests\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2430,
+      "offset": 2485,
       "length": 30,
       "value": "\"IABTCF_SpecialFeaturesOptIns\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2498,
+      "offset": 2553,
       "length": 30,
       "value": "\"IABTCF_PublisherRestrictions\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2562,
+      "offset": 2617,
       "length": 25,
       "value": "\"IABTCF_PublisherConsent\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2689,
       "length": 37,
       "value": "\"IABTCF_PublisherLegitimateInterests\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2722,
+      "offset": 2777,
       "length": 40,
       "value": "\"IABTCF_PublisherCustomPurposesConsents\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2824,
+      "offset": 2879,
       "length": 51,
       "value": "\"IABTCF_PublisherCustomPurposesLegitimateInterests\""
     },
@@ -8150,6 +8239,13 @@
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentService.swift",
       "kind": "Dictionary",
       "offset": 1050,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Consent\/ConsentService.swift",
+      "kind": "Dictionary",
+      "offset": 1150,
       "length": 3,
       "value": "[]"
     },
@@ -8296,14 +8392,14 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Internal\/SPLEventsManager.swift",
       "kind": "Dictionary",
-      "offset": 5356,
+      "offset": 5560,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Internal\/SPLEventsManager.swift",
       "kind": "Dictionary",
-      "offset": 6552,
+      "offset": 6756,
       "length": 3,
       "value": "[]"
     },
@@ -8345,7 +8441,7 @@
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Collect\/Collect.swift",
       "kind": "StringLiteral",
-      "offset": 14557,
+      "offset": 18357,
       "length": 2,
       "value": "\"\""
     }
