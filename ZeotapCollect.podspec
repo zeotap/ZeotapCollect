@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "ZeotapCollect"
-    s.version      = "1.3.8"
+    s.version      = "1.3.9"
     s.summary      = "ZeotapCollect SDK is used to integrate with client application for sending events"
     s.description  = "ZeotapCollect SDK is used to integrate with client application for sending events to Zeotap"
     s.homepage     = "https://github.com/zeotap/ZeotapCollect"
