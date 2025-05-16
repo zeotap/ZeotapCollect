@@ -20,6 +20,7 @@ import os
 }
 @_hasMissingDesignatedInitializers public class Utility {
   public static func defaultResponseCallback(_ statusMessage: [Swift.String : Swift.String])
+  public static func appendUserToKeys(_ data: [Swift.String : Any]) -> [Swift.String : Any]
   @objc deinit
 }
 public struct EventsList {

@@ -128,6 +128,61 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "appendUserToKeys",
+            "printedName": "appendUserToKeys(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13ZeotapCollect7UtilityC16appendUserToKeysySDySSypGAEFZ",
+            "mangledName": "$s13ZeotapCollect7UtilityC16appendUserToKeysySDySSypGAEFZ",
+            "moduleName": "ZeotapCollect",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -6742,7 +6797,7 @@
       "kind": "StringLiteral",
       "offset": 211,
       "length": 7,
-      "value": "\"1.3.8\""
+      "value": "\"1.3.9\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ZeotapCollect\/Constants.swift",

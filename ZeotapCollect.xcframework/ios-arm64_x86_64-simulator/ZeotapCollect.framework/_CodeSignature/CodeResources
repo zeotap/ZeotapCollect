@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		nu1ZKTJRM3qcdVAcAx54nB38T8A=
+		BBt2JHKfYUhMIXuPRjwM9Kgn3/8=
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cRn9v9IarFExvBS3nGrj89qP0m4=
+		dY/9OzPFF6ThyW1bUqzx14mkiqM=
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cRn9v9IarFExvBS3nGrj89qP0m4=
+		dY/9OzPFF6ThyW1bUqzx14mkiqM=
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AdA07Zeh8gdVeODbjGA6j3kxR2Y=
+		+GSkXHHH6YsHaMF1u1ygFyaeBXs=
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		nu1ZKTJRM3qcdVAcAx54nB38T8A=
+		BBt2JHKfYUhMIXuPRjwM9Kgn3/8=
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TFlXGUlpvyW4pSrsy+iPv36X8Yg=
+		dV33uYuerRsSE0B1rEG/z+ACN+E=
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TFlXGUlpvyW4pSrsy+iPv36X8Yg=
+		dV33uYuerRsSE0B1rEG/z+ACN+E=
 		</data>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1sWJc49o2EHqtmKSddc1bEqm5fY=
+		Jt6K6awDEUgYqn6VFrwOrpm50to=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lP6l4LIur8snpzeHx5P3EHo1IGBV0FG1QqxgD9wEal0=
+			X19xy1ckl+XfwOgm9jmhBVYpoPJqACAsqMMQxkf5XAw=
 			</data>
 		</dict>
 		<key>Modules/ZeotapCollect.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lgYBe+PLjD0c6lETJ/lDRBJPECs+5KR88BmsN+OMrro=
+			rHKgpeSyayvhGaBIZi9Rf3vqLIOaC9pfehVGsfEheNQ=
 			</data>
 		</dict>
 		<key>Modules/ZeotapCollect.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lgYBe+PLjD0c6lETJ/lDRBJPECs+5KR88BmsN+OMrro=
+			rHKgpeSyayvhGaBIZi9Rf3vqLIOaC9pfehVGsfEheNQ=
 			</data>
 		</dict>
 		<key>Modules/ZeotapCollect.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rGMxFYRRpyg8bu42ppSpy4XNXBF+T6mMkMcfM8bnwgc=
+			8RDDue4N6Tbd3k7G9wH948mAvOMP2El5jYvOJ3BO+eE=
 			</data>
 		</dict>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lP6l4LIur8snpzeHx5P3EHo1IGBV0FG1QqxgD9wEal0=
+			X19xy1ckl+XfwOgm9jmhBVYpoPJqACAsqMMQxkf5XAw=
 			</data>
 		</dict>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2w3WgjfH3tcWi7E7c2aYF9JFQI0csMLUl2vZTH4eaF0=
+			YUOKPWZpvqd+Kt2uKkgoom2J3ykDn93knIokaCzG+eM=
 			</data>
 		</dict>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2w3WgjfH3tcWi7E7c2aYF9JFQI0csMLUl2vZTH4eaF0=
+			YUOKPWZpvqd+Kt2uKkgoom2J3ykDn93knIokaCzG+eM=
 			</data>
 		</dict>
 		<key>Modules/ZeotapCollect.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7prv4ht0nQNBrw9/GGcUtE52d8CNXjFffMf6us7Lr8Y=
+			YzEjJ8MuJtsGNVSKnG/vlrw7QrzbtGclPKjHNyit6MI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
