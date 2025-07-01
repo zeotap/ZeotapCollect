@@ -21,7 +21,7 @@ let package = Package(
           // Targets can depend on other targets in this package, and on products in packages this package depends on.
               .binaryTarget(
                   name: "ZeotapCollect",
-                  url: "https://content.zeotap.com/ios-sdk/ios-collect-sdk.zip",
+                  url: "https://content.zeotap.com/ios-sdk/v1.3.8/ios-collect-sdk.zip",
                   checksum: "db3a6741a35828332f51798625ce1447a7c43d39307258fe6c271ff9668d4224")
           ]
 )
