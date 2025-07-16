@@ -64,6 +64,12 @@ if ! unzip -q "$ZIP_FILE"; then
     exit 1
 fi
 
+# Backup existing framework
+if [ -d "ZeotapCollect.xcframework" ]; then
+    echo "Backing up existing ZeotapCollect.xcframework"
+    mv "ZeotapCollect.xcframework" "ZeotapCollect.xcframework.old"
+fi
+
 # Find ZeotapCollect.xcframework in extracted files
 EXTRACTED_FRAMEWORK=""
 if [ -d "ZeotapCollect.xcframework" ]; then
@@ -79,17 +85,6 @@ fi
 
 echo "Found ZeotapCollect.xcframework at: $EXTRACTED_FRAMEWORK"
 
-# Remove old xcframework if it exists and replace with new one
-if [ -d "ZeotapCollect.xcframework.old" ]; then
-    rm -rf "ZeotapCollect.xcframework.old"
-fi
-
-# Backup existing framework
-if [ -d "ZeotapCollect.xcframework" ]; then
-    echo "Backing up existing ZeotapCollect.xcframework"
-    mv "ZeotapCollect.xcframework" "ZeotapCollect.xcframework.old"
-fi
-
 # Move the new framework from extracted files
 echo "Installing new ZeotapCollect.xcframework"
 if [ "$EXTRACTED_FRAMEWORK" != "ZeotapCollect.xcframework" ]; then
@@ -102,6 +97,11 @@ if [ -d "ZeotapCollect.xcframework" ]; then
 else
     echo "Error: Failed to install new ZeotapCollect.xcframework"
     exit 1
+fi
+
+# Remove old xcframework if it exists and replace with new one
+if [ -d "ZeotapCollect.xcframework.old" ]; then
+    rm -rf "ZeotapCollect.xcframework.old"
 fi
 
 # Clean up downloaded zip file and any extracted folders
