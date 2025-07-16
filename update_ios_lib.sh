@@ -64,11 +64,20 @@ if ! unzip -q "$ZIP_FILE"; then
     exit 1
 fi
 
-# Check if ZeotapCollect.xcframework exists in extracted files
-if [ ! -d "ZeotapCollect.xcframework" ]; then
+# Find ZeotapCollect.xcframework in extracted files
+EXTRACTED_FRAMEWORK=""
+if [ -d "ZeotapCollect.xcframework" ]; then
+    EXTRACTED_FRAMEWORK="ZeotapCollect.xcframework"
+elif [ -d "ios-collect-sdk/ZeotapCollect.xcframework" ]; then
+    EXTRACTED_FRAMEWORK="ios-collect-sdk/ZeotapCollect.xcframework"
+else
     echo "Error: ZeotapCollect.xcframework not found in extracted files"
+    echo "Available files after extraction:"
+    ls -la
     exit 1
 fi
+
+echo "Found ZeotapCollect.xcframework at: $EXTRACTED_FRAMEWORK"
 
 # Remove old xcframework if it exists and replace with new one
 if [ -d "ZeotapCollect.xcframework.old" ]; then
@@ -83,11 +92,15 @@ fi
 
 # Move the new framework from extracted files
 echo "Installing new ZeotapCollect.xcframework"
+if [ "$EXTRACTED_FRAMEWORK" != "ZeotapCollect.xcframework" ]; then
+    # Framework is in a subdirectory, move it to root
+    mv "$EXTRACTED_FRAMEWORK" "ZeotapCollect.xcframework"
+fi
+
 if [ -d "ZeotapCollect.xcframework" ]; then
-    # Framework is already in the right place from extraction
     echo "New framework installed successfully"
 else
-    echo "Error: New ZeotapCollect.xcframework not found after extraction"
+    echo "Error: Failed to install new ZeotapCollect.xcframework"
     exit 1
 fi
 
