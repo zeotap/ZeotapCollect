@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ZeotapCollect
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ZeotapCollect
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AdSupport
 import AppTrackingTransparency
 import CommonCrypto
@@ -14,6 +14,7 @@ import SystemConfiguration
 @_exported import ZeotapCollect
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import os
 @_hasMissingDesignatedInitializers public class SPLService {
   @objc deinit
@@ -72,7 +73,7 @@ public class CollectOption : ZeotapCollect.Option {
   public func purposesForTracking(value: [Swift.Int]) -> ZeotapCollect.CollectOption
   public func purposesForIdentifying(value: [Swift.Int]) -> ZeotapCollect.CollectOption
   public func checkZeotapVendorConsent(value: Swift.Bool) -> ZeotapCollect.CollectOption
-  public func build() -> ZeotapCollect.Option
+  public func build() -> any ZeotapCollect.Option
   @objc deinit
 }
 public typealias ResponseCallback = ([Swift.String : Swift.String]) -> Swift.Void
@@ -111,8 +112,8 @@ public class Reachability {
     public var description: Swift.String {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: ZeotapCollect.Reachability.NetworkStatus, b: ZeotapCollect.Reachability.NetworkStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -122,8 +123,8 @@ public class Reachability {
     public var description: Swift.String {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: ZeotapCollect.Reachability.Connection, b: ZeotapCollect.Reachability.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -190,7 +191,7 @@ extension ZeotapCollect.SDKException : Foundation.LocalizedError {
 public typealias LogDataCompletionHandler = ([Swift.String : Swift.AnyObject]?, Foundation.URLResponse?, ZeotapCollect.APIErrors?) -> Swift.Void
 public typealias PublishEventsCompletionHandler = (Swift.String?, Foundation.URLResponse?, ZeotapCollect.APIErrors?) -> Swift.Void
 @_hasMissingDesignatedInitializers public class Collect {
-  public static func initialize(option: ZeotapCollect.Option, _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
+  public static func initialize(option: any ZeotapCollect.Option, _ callback: @escaping ZeotapCollect.ResponseCallback = Utility.defaultResponseCallback)
   public static func getInstance() -> ZeotapCollect.Collect?
   public func pauseCollection()
   public func resumeCollection()
